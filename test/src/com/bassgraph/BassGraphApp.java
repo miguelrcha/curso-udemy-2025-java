@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class test {
+public class BassGraphApp {
     // Interface para o downloader de áudio do YouTube
     interface IYoutubeAudioDownloader {
         AudioStream downloadAudio(String youtubeLink) throws Exception;
