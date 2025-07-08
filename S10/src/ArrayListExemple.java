@@ -1,23 +1,25 @@
+import java.util.Arrays;
 import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.Vector;
 
 public class ArrayListExemple {
-
     public static void main(String[] args) {
-
-        ArrayList<String> nomes = new ArrayList<>();
-
-        System.out.println("Hello, World!");
-
         Scanner sc = new Scanner(System.in);
 
-        for(int i=0; i<3; i++) {
-            System.out.println("nome");
-            String nome = sc.nextLine();
+        int n = sc.nextInt();
+        double[] v = new double[n]; // vetores
 
-            nomes.add(nome);
+        for (int i = 0; i < n; i++) {
+            v[i] = sc.nextDouble();
         }
 
-        System.out.println(nomes);
+        double soma = 0;
+        for (int i = 0; i < n; i++) {
+            soma = soma + v[i];
+        }
+
+        double avg = soma / n;
+
+        System.out.println("AVERAGE HIGH: " + avg);
     }
 }
